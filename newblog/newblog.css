@@ -1,0 +1,238 @@
+body{
+    bottom: 100%;
+    font-family: Arial;
+    margin: 0;   
+    padding: 0;
+}
+.backimg{
+    width: 100%;
+    height: 46.05rem;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    object-fit: cover;
+}
+.backimgdiv{
+    margin: 0;
+    position: relative;
+}
+.header{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: transparent;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.iconwebsite{
+    height: 5rem;
+    z-index: 20;
+    padding-right:20px ;
+}
+.icondiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 6rem;
+    
+}
+.btn{
+    color: black;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 15px;
+    border-radius: 20px;
+    transition: background-color 600ms, color 600ms;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.title{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.register{
+    color: white;
+    background-color: black;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 15px;
+    border: none;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.register:hover{
+    box-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.allbuttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0.6;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchplace{
+    border-style: solid;
+    border-color: rgb(172, 172, 172);
+    font-size: 20px;
+    height: 1.7rem;
+}
+.searchplace::placeholder{
+    opacity: 0.2;
+}
+.searchicon{
+    height: 1.7rem;
+    background-color: rgb(219, 215, 215);
+}
+.firsttable ,.secondetable{
+   position: absolute;
+    top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    background-color: black;
+    align-items: center;
+    height: 25rem;
+    width: 25rem;
+    z-index: 300;
+    border-radius: 2rem;
+}
+.firsttable{
+    left: 5rem;
+}
+.secondetable{
+    right: 5rem ;
+}
+.firstimg{
+    position: absolute;
+    width: 24rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 2rem;
+    bottom: -4rem;
+    left: 0.5rem;
+}
+.textupimg{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 20px;
+    width: 15rem;
+}
+.btnundertxt{
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 15px;
+    transition: background-color 500ms, color 500ms;
+    padding: 10px 15px 10px 15px;
+    border-radius: 15px;
+}
+.btnundertxt:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.humbermenu{
+    background-color: transparent;
+    transition: all 0.5s;
+    z-index: 500;
+    width: 5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+}
+.menubar{
+    height: 0.5rem;
+    width: 3rem;
+    background-color: black;
+    border-radius: 2rem;
+    transition: all 0.5s;
+    border: none;
+}
+.menubar::after,.menubar::before{
+    left: 2rem;
+    content: '';
+    position: absolute;
+    height: 0.5rem;
+    width: 3rem;
+    background-color: black;
+    border-radius: 2rem;
+    transition: all 0.5s;
+    z-index: 500;
+    
+   
+}
+.menubar::after{
+    transform: translateY(1rem);
+    
+    
+}
+.menubar::before{
+    transform: translateY(-1rem);
+}
+.eventholder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+}
+.eventholder.opened .menubar{
+    transform: translate(-50px);
+    background-color: transparent;
+    position: relative;
+    z-index: 500;
+    
+}
+.eventholder.opened .menubar::after{
+    transform: rotate(45deg)  ;
+    z-index: 500;
+    background-color: white;
+}
+.eventholder.opened .menubar::before{
+    transform: rotate(-45deg) ;
+    background-color: white;
+    z-index: 500;
+}
+.menu{
+    background-color: transparent;
+    transition: all 0.5s;
+}
+.eventholder.opened .menu{
+    position: absolute;
+    background-color: black;
+    width: 40rem;
+    height:30rem ;
+    z-index: 50;
+    border-radius: 1rem;
+    left: 0.2rem;
+    top: 0.2rem;
+}
+
+    
+    
